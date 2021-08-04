@@ -1,0 +1,14 @@
+public class GameHealth {
+    private int health = 100;
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        if (health < 0)
+            this.health = 0;
+        else
+            this.health = health;
+    }
+}
